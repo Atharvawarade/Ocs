@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+.left_pillar {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    bottom: 23px;
+}
+
+.right_pillar {
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    bottom: 23px;
+}
+
+
+.Gate {
+    position: fixed;
+    left: 10%;
+    z-index: 0;
+    bottom: 90px;
+    animation-name: opening;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .left_pillar,
+    .right_pillar {
+        width: 20%;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    .Gate {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        top: 5%;
+        margin: auto;
+    }
+}
+
+@keyframes opening {
+    from {
+
+        visibility: visible;
+    }
+
+    to {
+        left: 100%;
+        visibility: hidden;
+        ;
+    }
+}

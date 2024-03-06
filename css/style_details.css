@@ -1,0 +1,200 @@
+/* styles.css */
+
+/* Resetting default styles and setting a base font family */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+
+}
+
+/* Background styling */
+.background-container {
+  background: url('../images/BG.jpg') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Container for the main content */
+.page-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  /* Set minimum height to 100% of viewport height */
+  overflow-y: auto;
+}
+
+
+/* Card styling with a blurred background */
+.blur-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.155);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: calc(100% - 160px);
+  /* Adjust width considering both margins */
+  text-align: center;
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+  .blur-card {
+    background: none;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .profile-tile {
+    width: 100%;
+    /* Make the profile tile take the full width on mobile */
+  }
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (min-width: 1500px) {
+  .blur-card {
+    margin: auto;
+  }
+}
+
+/* Profile tile styling */
+.profile-tile {
+  flex: 1;
+  /* Allow the profile tile to grow to take available space */
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.profile-tile .h2 {
+  text-shadow: #023E8A;
+}
+
+/* Profile picture styling */
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+/* Photo Upload */
+
+
+/* Details tiles styling */
+.details-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Individual detail tile styling */
+.detail-tile {
+  flex: auto;
+  margin: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.179);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.detail-tile .detail-title {
+  color: #023E8A;
+}
+
+.detail-tile .detail-value {
+  color: #023E8A;
+}
+
+/* for big screens like laptop */
+@media (min-width: 900px) {
+  .detail-tile {
+    margin: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .detail-tile {
+    margin: 20px;
+  }
+}
+
+/* Heading within detail tile */
+.detail-tile h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Styling for individual details within a detail tile */
+.detail {
+  margin-bottom: 15px;
+}
+
+/* Label for a detail */
+.detail-label {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #2f2727;
+}
+
+/* Value for a detail */
+.detail-value {
+  color: #ffffff;
+}
+
+/* Status bar styling */
+.status-bar {
+  background-color: #2ecc71;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  width: -webkit-fill-available;
+  /* Set width to 100% by default */
+}
+
+/* Paragraph within the status bar */
+.status-bar p {
+  margin: 0;
+}
+
+/* Styling for the department approvals count */
+#departmentApprovals {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#download {
+  padding-top: 5px;
+  text-decoration: none;
+  color: gray;
+
+}
+
+#download:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* Media Query for Responsive Design on Laptops */
+@media screen and (min-width: 821px) {
+  .status-bar {
+    position: absolute;
+    /* Change position to absolute */
+    top: 5px;
+    /* Position it at the top */
+    right: 5px;
+    /* Align it to the right */
+    width: auto;
+    /* Let it take the necessary width */
+  }
+}

@@ -1,0 +1,105 @@
+/* Updated CSS for proper alignment and styling */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: #023E8A;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#filters {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#filters #fetchbranch,
+#filters #graduationYear {
+    background-color: #ffffff;
+    color: black;
+}
+
+#filters .search-container {
+    padding-right: 2%;
+}
+
+#filters input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+}
+
+#filters .search-container button {
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+#filters .search-container button:hover {
+    background: #ccc;
+}
+
+.table {
+    margin: 0 2%;
+    border-collapse: collapse;
+    width: 96%; /* Adjusted width to fit within margins */
+}
+
+.table th,
+.table td {
+    border: 1.5px solid #ffffff; /* Added border */
+    padding: 8px;
+}
+
+.table th {
+    background-color: #144a90; /* Added background color */
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #aacff6; /* First color for striped effect */
+}
+
+.table tr:nth-child(odd) {
+    background-color: #4c9ff7; /* Second color for striped effect */
+}
+
+@media screen and (max-width: 600px) {
+    #filters .search-container {
+        padding-right: 0;
+    }
+
+    #filters input[type=text],
+    #filters .search-container button {
+        width: auto;
+        margin: 0;
+    }
+
+    #filters input[type=text] {
+        border: 1px solid #ccc;
+    }
+
+    .table {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.whole_table .pagination{
+    margin-top: 10px;
+    margin-left: 32%;
+}

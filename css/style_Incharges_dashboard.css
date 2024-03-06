@@ -1,0 +1,138 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+body {
+  display: flex;
+  margin: 0;
+
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  z-index: 1;
+  background: url(../images/BG.jpg);
+}
+
+.sbar,
+.nbar {
+  position: sticky;
+  top: 0;
+  background: none;
+}
+
+.sbar {
+  width: fit-content;
+  height: 100vh;
+  z-index: 11;
+}
+
+.nbar {
+  width: 100%;
+  background-color: none;
+  /* Add the following line to fix the issue */
+  margin-bottom: auto;
+  border: none;
+  border-radius: 0;
+  /* margin-bottom: 40px; */
+  /* box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.1); */
+
+}
+
+.mainContent {
+  width: -webkit-fill-available;
+}
+
+.modal-backdrop.show {
+  z-index: 10;
+}
+
+
+/* Main Content - written by atharva */
+.mainContent .welcome {
+  padding-left: 5%;
+}
+
+.mainContent .card-body>.row {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  border: 1px #023E8A;
+}
+
+.mainContent .row>h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5%;
+}
+
+#overlay {
+  padding-inline: 5%;
+}
+
+.mainContent .flashcard {
+  border: 2px solid #000000;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  /* background-color: blue; */
+  border-radius: 50%;
+  /* position: absolute; */
+  top: 20px;
+  /* Adjust the padding from top */
+  left: 0px;
+  /* Adjust the padding from left */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: xx-large;
+}
+
+.side-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14px;
+  height: 100%;
+  /* Height same as the flashcard */
+  /* background-color: blue; */
+  border-radius: 0px 6.5px 6.5px 0;
+}
+
+#requested .circle,
+#requested .side-line {
+  background-color: #023E8A;
+}
+
+#approved .circle,
+#approved .side-line {
+  background-color: #4CB648;
+}
+
+#pending .circle,
+#pending .side-line {
+  background-color: #FCC72C;
+}
+
+.counter {
+  margin-bottom: 10px;
+  /* background-color: #F2FF9B; */
+}
+
+.mainContent #benefited h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-top: 2%;
+}
