@@ -50,7 +50,7 @@
           <!-- Sidebar Holder -->
           <nav id="sidebar">
             <div class="sidebar-header">
-              <h3>Clear Gate</h3>
+              <h3>OCS</h3>
             </div>
             <!-- Student Profile -->
             <div class="student-profile">

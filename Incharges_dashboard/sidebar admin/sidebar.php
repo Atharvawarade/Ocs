@@ -12,7 +12,7 @@ if (isset($_SESSION['ID'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <title>Collapsible sidebar using Bootstrap 4</title>
+  <title>OCS</title>
 
   <!-- Our Custom CSS -->
   <link rel="stylesheet" href="sidebar/style_sidebar.css" />
@@ -30,7 +30,7 @@ if (isset($_SESSION['ID'])) {
   <!-- Sidebar Holder -->
   <nav id="sidebar">
     <div class="sidebar-header">
-      <h3>Clear Gate</h3>
+      <h3>OCS</h3>
     </div>
 
     <ul class="list-unstyled components">

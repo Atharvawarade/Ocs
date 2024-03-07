@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    /* Light blue background */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 400px;
+    /* Set a maximum width for responsiveness */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    text-align: center;
+}
+
+h1 {
+    font-size: 22px;
+    /* Increase heading size slightly */
+    margin-bottom: 15px;
+    color: #c0392b;
+    /* Red error message */
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    /* Increase line spacing for better readability */
+    margin-bottom: 20px;
+    /* Add some space after the paragraph */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    /* White text */
+    background-color: #c0392b;
+    /* Red button background */
+    padding: 10px 20px;
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    cursor: pointer;
+    /* Indicate clickable button */
+}
+
+a:hover {
+    background-color: #992d22;
+    /* Darker red on hover */
+}
+
+/* New styling for the image */
+img {
+    margin-bottom: 15px;
+    /* Add some space below the image */
+    display: block;
+    /* Ensures the image behaves like a single element */
+    width: 200px;
+    /* Set a fixed width for the image */
+    /* OR */
+    max-width: 50%;
+    /* Set a maximum width relative to the viewport */
+    margin: 0 auto;
+    /* Center the image horizontally within the container */
+}

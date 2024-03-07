@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Incorrect password!";
         }
     } else {
-        echo "User with this email does not exist.";
+        header("Location: ../error/invalid_user.html ");
     }
 
     $conn->close();
