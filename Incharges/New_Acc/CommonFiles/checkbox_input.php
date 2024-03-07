@@ -35,7 +35,7 @@
             '
             <form id="myForm_' . $prn . '" class="d-flex flex-row" action="update_status.php" method="post">
                 <button type="button" class="btn btn-outline-success ' . ($status == 1 ? 'active' : '') . '" onclick="submitForm(\'' . $prn . '\', 1,)">' . $acceptLabel . '</button>
-                <button type="button" class="btn btn-outline-danger ' . ($status == 0 ? 'Dactive' : '') . '" onclick="openRejectModal(\'' . $prn . '\')">' . $rejectLabel . '</button> 
+                <button type="button" class="btn btn-outline-danger ' . ($status === 0 ? 'Dactive' : '') . '" onclick="openRejectModal(\'' . $prn . '\')">' . $rejectLabel . '</button> 
             </form>
             ';
         }

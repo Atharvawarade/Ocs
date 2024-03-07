@@ -121,6 +121,11 @@ a.activated {
     background: #fff;
 }
 
+.deactivate {
+    color: #d5d5d59a;
+    pointer-events: none;
+}
+
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;

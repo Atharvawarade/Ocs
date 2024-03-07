@@ -35,7 +35,8 @@
         <!-- college_email -->
         <div class="form-group col-md-6">
           <label for="college_email">College Email:</label>
-          <input type="email" class="form-control" id="college_email" name="college_email" placeholder="College Email" />
+          <input type="email" class="form-control" id="college_email" name="college_email" placeholder="College Email" required />
+          <span id="emailError" style="color: red;"></span>
         </div>
         <!-- Mobile -->
         <div class="form-group col-md-6">
@@ -195,6 +196,21 @@
       <button type="submit" class="btn btn-primary mt-3">Submit</button>
     </form>
   </div>
+
+  <script>
+    document.getElementById('studentForm').addEventListener('submit', function(event) {
+      var collegeEmail = document.getElementById('college_email').value;
+      var emailError = document.getElementById('emailError');
+
+      // Check if email contains "@bitwardha.ac.in"
+      if (collegeEmail.indexOf('@bitwardha.ac.in') === -1) {
+        emailError.textContent = "Please provide a valid college email ending with @bitwardha.ac.in";
+        event.preventDefault(); // Prevent form submission
+      } else {
+        emailError.textContent = ""; // Clear error message
+      }
+    });
+  </script>
 
   <script>
     function validateFile() {

@@ -42,14 +42,8 @@
         $TNP_status = $row['TNP_status'];
         $Scholarship_status = $row['Scholarship_status'];
         $Accountant_status = $row['Accountant_status'];
-        // $Review_HOD = $row['Review_HOD'];
-        // $Review_fine = $row['Review_fine'];
-        // $Review_CC = $row['Review_CC'];
-        // $Review_Library = $row['Review_Library'];
-        // $Review_Sports = $row['Review_Sports'];
-        // $Review_TNP = $row['Review_TNP'];
-        // $Review_Scholarship = $row['Review_Scholarship'];
-        // $Review_Accountant = $row['Review_Accountant']; 
+
+        $sum = $HOD_status + $fine_status + $CC_status + $Library_HOD_status + $Sports_status + $TNP_status;
   ?>
 
         <div class="wrapper">
@@ -82,14 +76,13 @@
 
             <ul class="list-unstyled components">
               <li>
-                <a href="../Details Page/Details.php?prn=<?php echo urlencode($PRN); ?>">Account</a>
+                <a href="../Details Page/Details.php?prn=<?php echo urlencode($PRN); ?>">Profile</a>
               </li>
               <li>
-                <a href="../certificate generation/certificate.php?prn=<?php echo urlencode($PRN); ?>" id="printCertificate">Download certificate</a>
+                <a <?php if ($sum < 6) echo 'class="deactivate"'; ?> href="../certificate generation/certificate.php?prn=<?php echo urlencode($PRN); ?>" id="printCertificate">Download certificate</a>
               </li>
               <li>
-                <a href="../certificate generation/application.php?prn=<?php echo urlencode($PRN); ?>" id="printApplication">Apply for Caution Money Refund</a>
-                           
+                <a <?php if ($sum < 6) echo 'class="deactivate"'; ?> href="../certificate generation/application.php?prn=<?php echo urlencode($PRN); ?>" id="printApplication">Caution Money Refund</a>
               </li>
 
             </ul>
