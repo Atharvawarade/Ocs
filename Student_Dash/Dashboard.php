@@ -187,7 +187,7 @@
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-4" style="position: relative"></div>
                       <div class="col-md-4 col-sm-4 col-xs-4">
-                        <button class="btn btn-outline-info actionButton" id="btn-Mycard3" onclick="showReason('Computer Center Department')">Check Reason</button>
+                        <button class="btn btn-outline-info actionButton" id="btn-Mycard3" onclick="showReason('Computer Center')">Check Reason</button>
                       </div>
                     </div>
                   </div>
@@ -211,7 +211,7 @@
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-4" style="position: relative"></div>
                       <div class="col-md-4 col-sm-4 col-xs-4">
-                        <button class="btn btn-outline-info actionButton" id="btn-Mycard4" onclick="showReason('Library Department')">Check Reason</button>
+                        <button class="btn btn-outline-info actionButton" id="btn-Mycard4" onclick="showReason('Library')">Check Reason</button>
                       </div>
                     </div>
                   </div>
@@ -354,13 +354,12 @@
                 <script> 
                 document.getElementById('departmentName')
                 </script>";
-                // echo $HOD_reject;
                 ?>
               </div>
 
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" id="re-apply" class="btn btn-warning" data-dismiss="modal">Re-apply</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
               </div>
             </div>
           </div>
@@ -380,30 +379,39 @@
 
             // Here you're using a switch case to determine the reason based on the department
             var reason;
+            var status;
             switch (department) {
               case 'HOD Department':
                 reason = <?php echo json_encode($HOD_reject); ?>;
+                status = "HOD_status";
                 break;
               case 'Fine Department':
                 reason = <?php echo json_encode($Fine_reject); ?>;
+                status = "fine_status";
                 break;
               case 'Computer Center':
                 reason = <?php echo json_encode($CC_reject); ?>;
+                status = "CC_status";
                 break;
               case 'Library':
                 reason = <?php echo json_encode($Library_reject); ?>;
+                status = "Library_HOD_status";
                 break;
-              case 'Sports':
+              case 'Sports Department':
                 reason = <?php echo json_encode($Sports_reject); ?>;
+                status = "Sports_status";
                 break;
               case 'T&P Department':
                 reason = <?php echo json_encode($TandP_reject); ?>;
+                status = "TNP_status";
                 break;
-              case 'Scholarship':
+              case 'Scholarship Department':
                 reason = <?php echo json_encode($Scholarship_reject); ?>;
+                status = "Scholarship_status";
                 break;
               case 'Accountant Department':
                 reason = <?php echo json_encode($Account_reject); ?>;
+                status = "Accountant_status";
                 break;
               default:
                 reason = 'Reason not available';
@@ -412,8 +420,16 @@
             document.getElementById('reasonBody').innerHTML = reason;
             // Show the modal
             $('#exampleModalCenter').modal('show');
+
+            // Attach the click event handler to the "Re-apply" button
+            document.getElementById('re-apply').onclick = function() {
+              // Call a function to update status to null for the respective department
+              console.log(status);
+              updateStatusToNull(status);
+            };
           }
         </script>
+
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -442,7 +458,7 @@
         ]) . ';';
         echo '</script>';
         ?>
-
+        <script src="../JS//Dashboard JS/updateStatusToNull.js"></script>
         <script src="../JS/Dashboard JS/CardColorChanger.js" type="text/javascript"></script>
         <!-- ------------------------------------------------------------------ -->
         <script src="../JS/CertificateDownload.js" type="text/javascript"></script>
