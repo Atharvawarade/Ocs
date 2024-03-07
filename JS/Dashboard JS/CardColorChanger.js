@@ -62,25 +62,28 @@
         }
         
 
-          function changeCardColor(cardId, cardImageId, color) {
-            var card = document.getElementById(cardId);
-            var button = document.querySelector(".cardBody .secondRow .thirdDivision button");
-  
-            if (card) {
+        function changeCardColor(cardId, cardImageId, color) {
+          var card = document.getElementById(cardId);
+          var button = document.getElementById(`btn-${cardId}`); // Get the button by its id
+      
+          if (card) {
               card.style.backgroundColor = color;
-            
-            }
-
-            var cardImage = document.getElementById(cardImageId);
-
-            if (cardImage) {
-              if (color === "#d4edda") {
-                cardImage.src = "../images/approved.png";
-              } else if (color === "#f8d7da") {
-                cardImage.src = "../images/rejected.png";
-                // actionButton.style.display="block";
-                console.log("running");
-              }
-            }
           }
+      
+          var cardImage = document.getElementById(cardImageId);
+      
+          if (cardImage) {
+              if (color === "#d4edda") {
+                  cardImage.src = "../images/approved.png";
+                 
+              } else if (color === "#f8d7da") {
+                  cardImage.src = "../images/rejected.png";
+                  // Show the button
+                  if (button) {
+                      button.style.display = "inline-block";
+                  }
+              }
+          }
+      }
+          
         

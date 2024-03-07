@@ -141,7 +141,7 @@
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-4" style="position: relative"></div>
                       <div class="col-md-4 col-sm-4 col-xs-4">
-                        <button class="btn btn-outline-info actionButton" onclick="showReason('HOD Department')">Check Reason</button>
+                        <button class="btn btn-outline-info actionButton" id="btn-Mycard1" onclick="showReason('HOD Department')">Check Reason</button>
                       </div>
                     </div>
                   </div>
@@ -164,7 +164,7 @@
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-4" style="position: relative"></div>
                       <div class="col-md-4 col-sm-4 col-xs-4">
-                        <button class="btn btn-outline-info actionButton" onclick="showReason('Fine Department')">Check Reason</button>
+                        <button class="btn btn-outline-info actionButton" id="btn-Mycard2" onclick="showReason('Fine Department')">Check Reason</button>
                       </div>
                     </div>
                   </div>
@@ -187,7 +187,7 @@
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-4" style="position: relative"></div>
                       <div class="col-md-4 col-sm-4 col-xs-4">
-                        <button class="btn btn-outline-info actionButton" onclick="showReason('Computer Center Department')">Check Reason</button>
+                        <button class="btn btn-outline-info actionButton" id="btn-Mycard3" onclick="showReason('Computer Center Department')">Check Reason</button>
                       </div>
                     </div>
                   </div>
@@ -211,7 +211,7 @@
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-4" style="position: relative"></div>
                       <div class="col-md-4 col-sm-4 col-xs-4">
-                        <button class="btn btn-outline-info actionButton" onclick="showReason('Library Department')">Check Reason</button>
+                        <button class="btn btn-outline-info actionButton" id="btn-Mycard4" onclick="showReason('Library Department')">Check Reason</button>
                       </div>
                     </div>
                   </div>
@@ -232,7 +232,7 @@
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-4" style="position: relative"></div>
                       <div class="col-md-4 col-sm-4 col-xs-4">
-                        <button class="btn btn-outline-info actionButton" onclick="showReason('Sports Department')">Check Reason</button>
+                        <button class="btn btn-outline-info actionButton" id="btn-Mycard5" onclick="showReason('Sports Department')">Check Reason</button>
                       </div>
                     </div>
                   </div>
@@ -254,7 +254,7 @@
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-4" style="position: relative"></div>
                       <div class="col-md-4 col-sm-4 col-xs-4">
-                        <button class="btn btn-outline-info actionButton" onclick="showReason('T&P Department')">Check Reason</button>
+                        <button class="btn btn-outline-info actionButton" id="btn-Mycard6" onclick="showReason('T&P Department')">Check Reason</button>
                       </div>
                     </div>
                   </div>
@@ -278,7 +278,7 @@
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-4" style="position: relative"></div>
                       <div class="col-md-4 col-sm-4 col-xs-4">
-                        <button class="btn btn-outline-info actionButton" onclick="showReason('Scholarship Department')">Check Reason</button>
+                        <button class="btn btn-outline-info actionButton" id="btn-Mycard7" onclick="showReason('Scholarship Department')">Check Reason</button>
                       </div>
                     </div>
                   </div>
@@ -301,7 +301,7 @@
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-4" style="position: relative"></div>
                       <div class="col-md-4 col-sm-4 col-xs-4 ">
-                        <button class="btn btn-outline-info actionButton" onclick="showReason('Accountant Department')">Check Reason</button>
+                        <button class="btn btn-outline-info actionButton" id="btn-Mycard8" onclick="showReason('Accountant Department')">Check Reason</button>
                       </div>
                     </div>
                   </div>
