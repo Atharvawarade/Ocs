@@ -57,7 +57,7 @@
               <img src="
                   <?php
 
-                  $basicAddress = "http://127.0.0.1/Ocs-main/uploads/";
+                  $basicAddress = "http://127.0.0.1/Ocs/uploads/";
                   $sql2 = "SELECT ProfilePhoto FROM student WHERE PRN = $PRN"; // Modify this query based on your database schema
                   $result2 = $connection->query($sql2);
                   // Output data of each row
