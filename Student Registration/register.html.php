@@ -212,6 +212,16 @@
   </div>
 
   <script>
+    // Prevent form submission on Enter key press
+    document.addEventListener('keydown', function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        return false;
+      }
+    });
+  </script>
+
+  <script>
     document.getElementById('studentForm').addEventListener('submit', function(event) {
       var collegeEmail = document.getElementById('college_email').value;
       var emailError = document.getElementById('emailError');
