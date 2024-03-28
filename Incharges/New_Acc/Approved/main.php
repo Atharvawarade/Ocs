@@ -77,8 +77,6 @@ $Dept = $_SESSION['Department'];
                 <input type="text" placeholder="Search by Name or PRN" name="live_search" id="live_search" />
                 <button type="submit"><i class="bi bi-search" aria-hidden="true"></i></button>
             </div>
-
-
         </form>
 
         <div class="col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center text-white">Approved</div>

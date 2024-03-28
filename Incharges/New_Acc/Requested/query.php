@@ -66,9 +66,9 @@ if ($department == 'Accountant_status') {
 
 
 // Get filter and search parameters
-$filterBranch = isset($_GET['fetchbranch']) ? $_GET['fetchbranch'] : "";
-$filterYear = isset($_GET['graduationYear']) ? $_GET['graduationYear'] : '';
-$searchText = isset($_GET['live_search']) ? $_GET['live_search'] : '';
+$filterBranch = isset($_POST['fetchbranch']) ? $_POST['fetchbranch'] : "";
+$filterYear = isset($_POST['graduationYear']) ? $_POST['graduationYear'] : '';
+$searchText = isset($_POST['live_search']) ? $_POST['live_search'] : '';
 
 
 if (!empty($filterBranch)) {
