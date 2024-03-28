@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Function to upload image
     function image_upload($img, $PRN)
     {
-        define("UPLOAD_SRC", $_SERVER['DOCUMENT_ROOT'] . "/Ocs-main/Ocs-main/uploads/");
+        define("UPLOAD_SRC", $_SERVER['DOCUMENT_ROOT'] . "/Ocs/uploads/");
 
         $tmp_loc = $img['tmp_name'];
         $new_name = $PRN . random_int(11111, 99999) . $_POST['Branch'] . $_POST['Section'] . $_POST['Year_of_graduation'] . $img['name'];

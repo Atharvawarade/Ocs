@@ -222,13 +222,15 @@
         img.onload = function() {
           if (img.width === img.height) {
             var fileSize = fileInput.files[0].size; // in bytes
-            var maxSize = 5 * 1024 * 1024; // 50 KB
+            var maxSize = 5 * 1024 * 1024; // 5 MB
 
             if (fileSize > maxSize) {
-              alert("Please upload a square image with a maximum size of 50 KB.");
+              alert("Please upload a square image with a maximum size of 5 MB.");
+              fileInput.value = ''; // Clear the file input field
             }
           } else {
-            alert("Image dimention is noot in the ratio 1:1.");
+            alert("Image dimension is not in the ratio 1:1.");
+            fileInput.value = ''; // Clear the file input field
           }
         };
       }
