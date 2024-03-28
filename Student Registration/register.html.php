@@ -138,7 +138,22 @@
         <div class="form-group col-md-3">
           <label for="Academic_year_of_admission_in_BIT">Academic Year of Admission in BIT:
           </label>
-          <input type="varchar" class="form-control" id="Academic_year_of_admission_in_BIT" name="Academic_year_of_admission_in_BIT" />
+          <!-- <input type="varchar" class="form-control" id="Academic_year_of_admission_in_BIT" name="Academic_year_of_admission_in_BIT" /> -->
+          <select class="form-control" id="Academic_year_of_admission_in_BIT" name="Academic_year_of_admission_in_BIT" placeholder="Year of admission">
+            <?php
+            // Get the current year
+            $currentYear = date("Y");
+
+            // Set the range of years you want in the dropdown
+            $startYear = $currentYear - 10; // Modify this range as needed
+            $endYear = $currentYear;   // Modify this range as needed
+
+            // Loop through the range of years and create options
+            for ($year = $startYear; $year <= $endYear; $year++) {
+              echo "<option value='$year'>$year</option>";
+            }
+            ?>
+          </select>
         </div>
       </div>
 

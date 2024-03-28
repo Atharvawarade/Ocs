@@ -81,7 +81,7 @@ $Dept = $_SESSION['Department'];
 
         </form>
 
-        <div class="col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center text-white">Requested</div>
+        <div class="col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center text-white">Pending</div>
     </nav>
     <div class="">
         <table class="table table-stripped table-hover text-center">
