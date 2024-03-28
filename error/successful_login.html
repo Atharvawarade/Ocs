@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Successful Registration</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .message-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 80%;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333333;
+      }
+
+      p {
+        color: #666666;
+      }
+
+      .login-button {
+        display: inline-block;
+        background-color: #4caf50;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      .login-button:hover {
+        background-color: #45a049;
+      }
+
+      img {
+        max-width: 35%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .message-container {
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message-container">
+      <img src="../images/LoginSuccess.png" alt="Success Image" />
+      <h1>Registration Successful</h1>
+      <p>Your registration was successful.</p>
+      <p>Your PRN has been set as your password.</p>
+      <a href="../login_student.html" class="login-button">Login</a>
+    </div>
+  </body>
+</html>
