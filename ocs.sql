@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2024 at 09:46 PM
+-- Generation Time: Mar 28, 2024 at 07:39 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -68,12 +68,12 @@ CREATE TABLE `status` (
   `Section` enum('A','B','') NOT NULL,
   `Year_of_grad` year(4) NOT NULL,
   `HOD_status` tinyint(1) DEFAULT NULL,
-  `fine_status` tinyint(1) DEFAULT 0 CHECK (`HOD_status` in (0,1)),
-  `CC_status` tinyint(1) DEFAULT 0 CHECK (`HOD_status` in (0,1)),
-  `Library_HOD_status` tinyint(1) DEFAULT 0 CHECK (`HOD_status` in (0,1)),
-  `Sports_status` tinyint(1) DEFAULT 0 CHECK (`HOD_status` in (0,1)),
-  `TNP_status` tinyint(1) DEFAULT 0 CHECK (`HOD_status` in (0,1)),
-  `Scholarship_status` tinyint(1) DEFAULT 0 CHECK (`HOD_status` in (0,1)),
+  `fine_status` tinyint(1) DEFAULT NULL,
+  `CC_status` tinyint(1) DEFAULT NULL,
+  `Library_HOD_status` tinyint(1) DEFAULT NULL,
+  `Sports_status` tinyint(1) DEFAULT NULL,
+  `TNP_status` tinyint(1) DEFAULT NULL,
+  `Scholarship_status` tinyint(1) DEFAULT NULL,
   `Accountant_status` tinyint(1) DEFAULT NULL,
   `HOD_reject` text NOT NULL,
   `Fine_reject` text NOT NULL,
@@ -96,8 +96,9 @@ INSERT INTO `status` (`PRN`, `name`, `Year_of_study`, `Branch`, `Section`, `Year
 ('2146491245083', 'Chaitanya Ashish Rawat', 0, 'Computer Engineering', 'B', '2025', NULL, NULL, NULL, 0, 0, 0, 0, 0, 'trial\n', '1', 'CC reject', 'jl', 'jnoi', 'ojipijp', 'olpojp;lj', 'nonklnin'),
 ('2146491245094', 'Harshal Maruti Mude', 0, 'Civil Engineering', 'B', '0000', NULL, 1, 0, 0, 0, 0, 0, NULL, 'tumne abb tak report nhi di hai', '', '', '', '', '', '', ''),
 ('2146491245099', 'Mrudula  Ravindra Pangul', 3, 'Computer Engineering', 'B', '2025', 0, 0, 0, 0, 0, 0, 1, NULL, 'notv s', '', '', '', '', '', '', ''),
-('22', 'Anuja ATHARVA WARADE', 3, 'Civil Engineering', '', '2022', NULL, 0, 0, 0, 0, 0, 0, NULL, 'c', '', '', '', '', '', '', ''),
+('2146491248088', 'Hanumanji Pawan Putra', 3, 'Computer Engineering', 'B', '2025', NULL, 0, 0, 0, 0, 0, 0, NULL, '', '', '', '', '', '', '', ''),
 ('2233445566778', 'Kavya Patel', 0, 'Mechanical Engineering', 'B', '2025', NULL, 1, 0, 1, 0, 1, 1, NULL, '', '', '', '', '', '', '', ''),
+('2246491245008', 'tiger nitin shroff', 3, 'Civil Engineering', 'A', '2024', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '', '', '', '', '', ''),
 ('2345678901234', 'Diya Singh', 0, 'Electrical Engineering', 'B', '2024', NULL, 1, 0, 1, 0, 1, 1, NULL, '', '', '', '', '', '', '', ''),
 ('314649245083', 'Mahendra  Singh Dhoni', 1, 'Mechanical Engineering', '', '2022', NULL, 0, 0, 0, 0, 0, 0, NULL, '', '', '', '', '', '', '\r\n', ''),
 ('3344556677889', 'Aaradhya Sharma', 0, 'Computer Engineering', 'A', '2026', NULL, 0, 0, 0, 1, 0, 1, NULL, '', '', '', '', '', '', '', ''),
@@ -112,7 +113,9 @@ INSERT INTO `status` (`PRN`, `name`, `Year_of_study`, `Branch`, `Section`, `Year
 ('7894561230032', 'Anita Ashish Rawat', 0, 'Computer Engineering', 'A', '1975', NULL, 0, 0, 0, 0, 0, 0, NULL, '', '', '', '', '', '', '', ''),
 ('8899001122334', 'Arjun Singh', 0, 'Electrical Engineering', 'B', '2031', NULL, 1, 0, 1, 0, 1, 0, NULL, '', '', '', '', '', '', '', ''),
 ('8901234567890', 'Khushi Joshi', 0, 'Mechanical Engineering', 'B', '2030', NULL, 1, 0, 1, 0, 1, 0, NULL, '', '', '', '', '', '', '', ''),
-('9012345678901', 'Vivaan Kumar', 0, 'Computer Engineering', 'A', '2031', NULL, 0, 1, 0, 1, 0, 1, NULL, '', '', '', '', '', '', '', '');
+('9012345678901', 'Vivaan Kumar', 0, 'Computer Engineering', 'A', '2031', NULL, 0, 1, 0, 1, 0, 1, NULL, '', '', '', '', '', '', '', ''),
+('9480052855846', 'Piyush Manoj Raut', 1, 'Computer Engineering', 'B', '2020', NULL, 0, 0, 0, 0, 0, 0, NULL, '', '', '', '', '', '', '', ''),
+('9879798745669', 'Avantika  dwij  Narange', 1, 'Computer Engineering', 'A', '2025', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -156,8 +159,9 @@ INSERT INTO `student` (`Firstname`, `Middlename`, `Lastname`, `college_email`, `
 ('Chaitanya', 'Ashish', 'Rawat', 'cheturawat@gmail.com', 9405528955, 3, 'Computer Engineering', 'B', '2025', '2146491245083', 'EN65894287', '2023-11-22', 'Wardha', 'Indian', 'Bajaj College of Science', '2021', 'Hindu', 'OPEN', 'graduated', 'Yes', '214649124508380357Computer EngineeringB2025WhatsApp Image 2023-11-28 at 4.51.23 PM.jpeg', '2024-02-11 11:49:19'),
 ('Harshal', 'Maruti', 'Mude', 'co.2021.hmmude@bitwardha.ac.in', 8999756849, 4, 'Civil Engineering', 'B', '0000', '2146491245094', 'EN65894239', '2023-11-24', 'Wardha', 'Indian', 'Amity University Delhi', '2021', 'Hindu', 'ST', '', 'Yes', '2146491245094Civil EngineeringB.jpeg', '2023-12-17 18:41:32'),
 ('Mrudula ', 'Ravindra', 'Pangul', 'co.2021.mrpangul@bitwardha.ac.in', 9518718068, 3, 'Computer Engineering', 'B', '2025', '2146491245099', 'EN21214517', '2003-07-15', 'Wani', 'Indian', 'Janta Mahavidya Wardha', '2021', 'Hindu', 'OBC', 'Graduated', 'Yes', '', '2024-02-15 10:59:01'),
-('Anuja', 'ATHARVA', 'WARADE', 'anuja@gmail.com', 9175126738, 3, 'Civil Engineering', '', '2022', '22', '5', '2024-02-14', 'Wardha', 'Indian', 'Amity University Delhi', '2022', 'Sikh', 'VJNT', 'k;kk', 'No', '2227448Civil Engineering2022backdrop of elocution.png', '2024-02-25 12:07:34'),
+('Hanumanji', 'Pawan', 'Putra', 'JaiShreeRam@bitwardha.ac.in', 9172953751, 3, 'Computer Engineering', 'B', '2025', '2146491248088', 'EN65894328', '2024-03-20', 'Ayodhya', 'Indian', 'NO College', '0000', 'Hindu', 'OPEN', 'testing', 'No', '214649124808846871Computer EngineeringB2025student.png', '2024-03-07 21:05:56'),
 ('Kavya', 'Patel', 'Verma', 'kavya.verma@example.com', 7654321198, 4, 'Mechanical Engineering', 'B', '2021', '2233445566778', 'EN22334455', '2001-01-05', 'Jaipur', 'Indian', 'ABC College', '2017', 'Muslim', 'DTNT', 'Passionate about robotics', 'Yes', '', '2023-12-17 18:36:27'),
+('tiger', 'nitin', 'shroff', 'co.2021.hmmudshroff@bitwardha.ac.in', 9999999999, 3, 'Civil Engineering', 'A', '2024', '2246491245008', 'EN1234', '2024-02-28', 'Goa', 'Indian', 'shantibai college of science', '0000', 'Sikh', 'SC', 'harrased', 'Yes', '224649124500896923Civil EngineeringA2024croopPsPhoto.jpg', '2024-03-28 18:24:37'),
 ('Diya', 'Singh', 'Sharma', 'diya.sharma@example.com', 8765432109, 2, 'Electrical Engineering', 'B', '2023', '2345678901234', 'EN23456789', '1999-02-15', 'Delhi', 'Indian', 'ABC College', '2019', 'Hindu', 'SC', 'Hardworking', 'Yes', '', '2023-11-28 15:17:53'),
 ('Mahendra ', 'Singh', 'Dhoni', 'msdhoni@bitwardha.ac.in', 8999531985, 1, 'Mechanical Engineering', '', '2022', '314649245083', 'EN1', '2024-01-30', 'Wardha', 'Indian', 'shantibai college of science', '2026', 'Hindu', 'OPEN', '', 'Yes', '31464924508322810Mechanical Engineering2022ms.jpg', '2024-01-30 03:46:45'),
 ('Aaradhya', 'Sharma', 'Singh', 'aaradhya.singh@example.com', 6543210887, 1, 'Computer Engineering', 'A', '2024', '3344556677889', 'EN33445566', '1998-12-30', 'Kolkata', 'Indian', 'PQR College', '2020', 'Sikh', 'VJNT', 'Music enthusiast', 'No', '', '2023-12-17 18:40:18'),
@@ -172,7 +176,9 @@ INSERT INTO `student` (`Firstname`, `Middlename`, `Lastname`, `college_email`, `
 ('Anita', 'Ashish', 'Rawat', 'anitarawat@gmail.com', 9403555600, 3, 'Computer Engineering', 'A', '0000', '7894561230032', 'EN65894247', '2023-11-13', 'Wardha', 'Indian', 'Amity University Delhi', '2021', 'Sikh', 'OPEN', '', 'Yes', 'cr49835anita.jpeg', '2023-12-17 18:41:41'),
 ('Arjun', 'Singh', 'Verma', 'arjun.verma@example.com', 1098765431, 2, 'Electrical Engineering', 'B', '2023', '8899001122334', 'EN88990011', '1999-03-15', 'Delhi', 'Indian', 'LMN College', '2019', 'Hindu', 'SC', 'Chess enthusiast', 'Yes', '', '2023-12-17 18:37:30'),
 ('Khushi', 'Joshi', 'Sharma', 'khushi.sharma@example.com', 2109876543, 4, 'Mechanical Engineering', 'B', '2021', '8901234567890', 'EN89012345', '2001-10-12', 'Hyderabad', 'Indian', 'PQR College', '2017', 'Muslim', 'SBC', 'Bookworm', 'Yes', '', '2023-11-28 15:17:53'),
-('Vivaan', 'Kumar', 'Verma', 'vivaan.verma@example.com', 1098765432, 1, 'Computer Engineering', 'A', '2024', '9012345678901', 'EN90123456', '1998-06-08', 'Mumbai', 'Indian', 'LMN College', '2020', 'Hindu', 'OPEN', 'Nature lover', 'No', '', '2023-11-28 15:17:53');
+('Vivaan', 'Kumar', 'Verma', 'vivaan.verma@example.com', 1098765432, 1, 'Computer Engineering', 'A', '2024', '9012345678901', 'EN90123456', '1998-06-08', 'Mumbai', 'Indian', 'LMN College', '2020', 'Hindu', 'OPEN', 'Nature lover', 'No', '', '2023-11-28 15:17:53'),
+('Piyush', 'Manoj', 'Raut', 'co.2021.pmraut@bitwardha.ac.in', 9408895555, 1, 'Computer Engineering', 'B', '2020', '9480052855846', 'EN89789876', '2024-03-05', 'wardha', 'Indian', 'abc college', '2021', 'Buddhist', 'SC', 'Graduated', 'Yes', '948005285584629427Computer EngineeringB202031464924508322810Mechanical Engineering2022ms.jpg', '2024-03-27 12:10:11'),
+('Avantika ', 'dwij ', 'Narange', 'co.2021.adnaranje@bitwardha.ac.in', 9897198971, 1, 'Computer Engineering', 'A', '2025', '9879798745669', 'EN78945698', '2024-03-07', 'Wardha', 'Indian', 'Bajaj College of Science', '2021', 'Hindu', 'OBC', 'Graduated', 'Yes', '987979874566950850Computer EngineeringA2025ethics.png', '2024-03-28 18:26:47');
 
 --
 -- Triggers `student`

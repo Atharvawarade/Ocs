@@ -138,7 +138,6 @@
         <div class="form-group col-md-3">
           <label for="Academic_year_of_admission_in_BIT">Academic Year of Admission in BIT:
           </label>
-          <!-- <input type="varchar" class="form-control" id="Academic_year_of_admission_in_BIT" name="Academic_year_of_admission_in_BIT" /> -->
           <select class="form-control" id="Academic_year_of_admission_in_BIT" name="Academic_year_of_admission_in_BIT" placeholder="Year of admission">
             <?php
             // Get the current year
