@@ -7,8 +7,6 @@
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
@@ -36,20 +34,20 @@ The **Online Clearance System** is a web-based application designed to streamlin
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/online-clearance-system.git
+   git clone https://github.com/Atharvawarade/Ocs.git
 
 2. **Navigate to the Project Directory**:
    ```bash
-   cd online-clearance-system
+   cd OCS
 
 3. **Set Up the Database**:
-   - Import the `database.sql` file into your MySQL server.
-   - Update the database configuration in `config.php` with your MySQL credentials.
+   - Import the `ocs.sql` file into your MySQL server.
+   - Update the database configuration in `connection.php` with your MySQL credentials.
 
 4. **Run the Application**:
    - Set up a local server using XAMPP or WAMP.
    - Place the project folder in the server's root directory (`htdocs` for XAMPP).
-   - Start the server and navigate to `http://localhost/online-clearance-system`.
+   - Start the server and navigate to `https://localhost/ocs`.
 
 ## Usage
 
@@ -76,7 +74,7 @@ Select User Page:
 
    <table>
        <tr>
-           <td align="center">Login Page</td>
+           <td align="center">Student Login Page</td>
            <td align="center">Register Page</td>
        </tr>
        <tr>
@@ -94,51 +92,79 @@ Select User Page:
        
    </table>
 
-2. Trash Collector Side Application:
+2. Incharge:
    <table>
       <tr>
-         <td align="center">Start Screen</td>
-         <td align="center">Login Screen</td>
-         <td align="center">Register Screen</td>
+         <td align="center">Incharge Login Page</td>
+         <td align="center">Incharge Dashboard</td>
       </tr>
       <tr>
-         <td align="center"><img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/4444cb66-67bf-43a3-93ba-de477a3f68a5" width="250"></td>
-         <td align="center"><img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/cc0f79ea-b625-4e51-92f4-24291fd4c3ec" width="250"></td>
-         <td align="center"><img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/f9a99b8d-8c94-4ade-8be4-d2e8675aa730" width="250"></td>
+         <td align="center"><img src="https://github.com/user-attachments/assets/5459e446-5759-4878-a365-5f06ba5d6d58" width="500"></td>
+         <td align="center"><img src="https://github.com/user-attachments/assets/6e3c6f36-d1cf-4683-9703-76aa8214abbf" width="500"></td>
       </tr>
 
       <tr>
-         <td align="center">Home Screen</td>
-         <td align="center">Completed Pickup Screen</td>
-         <td align="center">Item Details Page</td>
+         <td align="center">Incharge Profile</td>
+         <td align="center">Password Change</td>
       </tr>
       <tr>
-         <td align="center"><img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/9e985d68-4f3d-44e8-8402-5e43f2958e4b" width="250"></td>
-         <td align="center"><img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/7792ca8a-7ae2-4034-823b-ae51ba92931d" width="250"></td>
-         <td align="center"><img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/5d36eafb-c63f-440a-b248-b4a28a5bcd5a" width="250"></td>
+         <td align="center"><img src="https://github.com/user-attachments/assets/f02f91b6-9c92-4caa-95a4-d6da6c829ed5" width="500"></td>
+         <td align="center"><img src="https://github.com/user-attachments/assets/d7926c24-4fbc-431b-aed0-4e18d06e3be1" width="500"></td>
       </tr>
       
       <tr>
-         <td align="center">Pending Pickup Screen</td>
-         <td align="center">Notifications Screen</td>
-         <td align="center">Profile Screen</td>
+         <td align="center">Requested Students</td>
+         <td align="center">Pending Students</td>
       </tr>
       <tr>
-         <td align="center"><img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/299abe9f-8ab4-48c9-a32a-a2a3e37c59f4" width="250"></td>
-         <td align="center"><img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/8b98435a-d42f-4c17-813b-f71e4731809b" width="250"></td>
-         <td align="center"><img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/94b9c4b8-5589-4e19-bc74-96f5566a9fd7" width="250"></td>
+         <td align="center"><img src="https://github.com/user-attachments/assets/be04a19d-aad4-477f-936a-08b831e58795" width="500"></td>
+         <td align="center"><img src="https://github.com/user-attachments/assets/230996d6-d96a-4d59-a63e-abfbf4885bbb" width="500"></td>
       </tr>
+      <tr>
+         <td align="center">All Students</td>
+      </tr>
+      <tr>
+         <td align="center"><img src="https://github.com/user-attachments/assets/20a35f79-aeac-4e06-a413-25a67f210faf" width="500"></td>
+      </tr>
+      
    </table>     
 
-## Contributing
+   3. Accountant:
+   <table>
+      <tr>
+         <td align="center">Accountant Login Page</td>
+         <td align="center">Accountant Dashboard</td>
+      </tr>
+      <tr>
+         <td align="center"><img src="https://github.com/user-attachments/assets/25acfcba-419c-4ec6-92d8-f81fd2f831a0" width="500"></td>
+         <td align="center"><img src="https://github.com/user-attachments/assets/c7b4ff7f-ea6c-4c1a-b02c-45327c736c19" width="500"></td>
+      </tr>
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/your-feature-name`).
-5. Open a pull request.
+      <tr>
+         <td align="center">Manage Incharges</td>
+         <td align="center">Password Change</td>
+      </tr>
+      <tr>
+         <td align="center"><img src="https://github.com/user-attachments/assets/437deae6-7d1b-485a-935a-7618f1b3bb53" width="500"></td>
+         <td align="center"><img src="https://github.com/user-attachments/assets/8261f6f5-9e47-43b6-9707-3251baf46993" width="500"></td>
+      </tr>
+      
+      <tr>
+         <td align="center">Requested Students</td>
+         <td align="center">Pending Students</td>
+      </tr>
+      <tr>
+         <td align="center"><img src="https://github.com/user-attachments/assets/be04a19d-aad4-477f-936a-08b831e58795" width="500"></td>
+         <td align="center"><img src="https://github.com/user-attachments/assets/230996d6-d96a-4d59-a63e-abfbf4885bbb" width="500"></td>
+      </tr>
+      <tr>
+         <td align="center">All Students</td>
+      </tr>
+      <tr>
+         <td align="center"><img src="https://github.com/user-attachments/assets/20a35f79-aeac-4e06-a413-25a67f210faf" width="500"></td>
+      </tr>
+      
+   </table>  
 
 
 ## Acknowledgements
