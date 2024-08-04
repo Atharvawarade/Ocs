@@ -2,14 +2,16 @@
 # Online Clearance System
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+<div style="display: flex; justify-content: space-around; background-color: #f2f2f2; padding: 10px; border-radius: 8px;">
+  <a href="#introduction" style="text-decoration: none; color: #000;">Introduction</a>
+  <a href="#features" style="text-decoration: none; color: #000;">Features</a>
+  <a href="#technologies-used" style="text-decoration: none; color: #000;">Technologies Used</a>
+  <a href="#installation" style="text-decoration: none; color: #000;">Installation</a>
+  <a href="#usage" style="text-decoration: none; color: #000;">Usage</a>
+  <a href="#contributing" style="text-decoration: none; color: #000;">Contributing</a>
+  <a href="#license" style="text-decoration: none; color: #000;">License</a>
+  <a href="#acknowledgements" style="text-decoration: none; color: #000;">Acknowledgements</a>
+</div>
 
 ## Introduction
 The **Online Clearance System** is a web-based application designed to streamline the due clearance process for students at Bajaj Institute of Technology, Wardha, Maharashtra, India. This system aims to significantly reduce the effort and time required for both students and the in-charge personnel by automating and digitizing the clearance process.
@@ -72,9 +74,6 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/your-feature-name`).
 5. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
