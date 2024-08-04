@@ -35,9 +35,9 @@ The **Online Clearance System** is a web-based application designed to streamlin
    git clone https://github.com/yourusername/online-clearance-system.git
 
 2. **Navigate to the Project Directory**:
-   \`\`\`bash
+   ```bash
    cd online-clearance-system
-   \`\`\`
+
 3. **Set Up the Database**:
    - Import the `database.sql` file into your MySQL server.
    - Update the database configuration in `config.php` with your MySQL credentials.
