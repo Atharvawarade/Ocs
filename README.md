@@ -68,7 +68,8 @@ The **Online Clearance System** is a web-based application designed to streamlin
   
 ## Snapshots of the Application:
 Select User Page:
-<img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/4b226386-5dfa-4409-abb1-41321a788928" width="250">
+<br>
+<img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/4b226386-5dfa-4409-abb1-41321a788928" width="1000">
 1. Student:
    <table>
        <tr>
