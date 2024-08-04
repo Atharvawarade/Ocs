@@ -67,7 +67,9 @@ The **Online Clearance System** is a web-based application designed to streamlin
    - Receive real-time notifications for updates and alerts.
   
 ## Snapshots of the Application:
-1. User Side Application:
+Select User Page:
+<img src="https://github.com/Ninad-Lunge/SustainX/assets/96621805/4b226386-5dfa-4409-abb1-41321a788928" width="250">
+1. Student:
    <table>
        <tr>
            <td align="center">Login Page</td>
