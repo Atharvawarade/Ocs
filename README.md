@@ -2,16 +2,14 @@
 # Online Clearance System
 
 ## Table of Contents
-<div style="display: flex; justify-content: space-around; background-color: #f2f2f2; padding: 10px; border-radius: 8px;">
-  <button><a href="#introduction" style="text-decoration: none; color: #000;">Introduction</a></button>
-  <a href="#features" style="text-decoration: none; color: #000;">Features</a>
-  <a href="#technologies-used" style="text-decoration: none; color: #000;">Technologies Used</a>
-  <a href="#installation" style="text-decoration: none; color: #000;">Installation</a>
-  <a href="#usage" style="text-decoration: none; color: #000;">Usage</a>
-  <a href="#contributing" style="text-decoration: none; color: #000;">Contributing</a>
-  <a href="#license" style="text-decoration: none; color: #000;">License</a>
-  <a href="#acknowledgements" style="text-decoration: none; color: #000;">Acknowledgements</a>
-</div>
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 The **Online Clearance System** is a web-based application designed to streamline the due clearance process for students at Bajaj Institute of Technology, Wardha, Maharashtra, India. This system aims to significantly reduce the effort and time required for both students and the in-charge personnel by automating and digitizing the clearance process.
@@ -25,10 +23,28 @@ The **Online Clearance System** is a web-based application designed to streamlin
 - **Role-Based Access**: Different access levels for students, faculty, and administrators.
 
 ## Technologies Used
-- **Frontend**: HTML, CSS, JavaScript, Bootstrap
-- **Backend**: PHP
-- **Database**: MySQL
-- **Version Control**: Git
+<div style="display: flex; justify-content: space-around; background-color: #f2f2f2; padding: 10px; border-radius: 8px;">
+  <a href="#frontend" style="text-decoration: none; color: #000;">Frontend</a>
+  <a href="#backend" style="text-decoration: none; color: #000;">Backend</a>
+  <a href="#database" style="text-decoration: none; color: #000;">Database</a>
+  <a href="#version-control" style="text-decoration: none; color: #000;">Version Control</a>
+</div>
+
+### Frontend
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+### Backend
+- ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+
+### Database
+- ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Version Control
+- ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
 
 ## Installation
 
