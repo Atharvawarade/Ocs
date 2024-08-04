@@ -3,7 +3,7 @@
 
 ## Table of Contents
 <div style="display: flex; justify-content: space-around; background-color: #f2f2f2; padding: 10px; border-radius: 8px;">
-  <a href="#introduction" style="text-decoration: none; color: #000;">Introduction</a>
+  <button><a href="#introduction" style="text-decoration: none; color: #000;">Introduction</a></button>
   <a href="#features" style="text-decoration: none; color: #000;">Features</a>
   <a href="#technologies-used" style="text-decoration: none; color: #000;">Technologies Used</a>
   <a href="#installation" style="text-decoration: none; color: #000;">Installation</a>
